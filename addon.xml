@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="plugin.video.veratv"
+version="1.0"
+name="Vera TV"
+provider-name="nfurquez">
+<requires>
+  <import addon="xbmc.python" version="2.24.0"/> 
+  <import addon="script.module.beautifulsoup4" />  
+  <import addon="script.module.web-pdb" />
+<!--       <import addon="xbmc.python" version="2.1.0"/> -->
+<!--     <import addon="script.module.beautifulsoup" version="3.2.1"/> -->
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.liveresolver" version="0.1.24" optional="true"/>
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" optional="true" />
+    <import addon="script.module.urlresolver" optional="true"/>
+    <import addon="script.module.simplejson" />    
+     <import addon="script.module.livestreamer" optional="true"/>
+     <import addon="script.module.pyamf" optional="true"/>
+</requires>
+<extension point="xbmc.python.pluginsource" library="addon.py">
+  <provides>video</provides>
+</extension>
+<platform>all</platform>
+  <extension point="xbmc.addon.metadata">
+  <summary lang="en">Plugin para ver OpenFING desde Kodi</summary>
+  <description lang="en">OpenFING es un proyecto estudiantil que pretende crear una biblioteca multimedia colaborativa, con videos de los cursos dictados en la facultad.</description>
+  <disclaimer lang="en"></disclaimer>
+</extension>
+</addon>
