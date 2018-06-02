@@ -115,7 +115,7 @@ def list_canales():
         lista.append((url_item, list_item, False))
     xbmcplugin.addDirectoryItems(_handle, lista, len(lista))
     # Add a sort method for the virtual folder items (alphabetically, ignore articles)
-    xbmcplugin.addSortMethod(_handle, xbmcplugin.SORT_METHOD_LABEL_IGNORE_THE)
+    #xbmcplugin.addSortMethod(_handle, xbmcplugin.SORT_METHOD_LABEL_IGNORE_THE)
     # Finish creating a virtual folder.
     xbmcplugin.endOfDirectory(_handle)
 
